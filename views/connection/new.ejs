@@ -1,0 +1,43 @@
+<%- include('../partials/header.ejs')%>
+
+      <div >
+          <form action='/connections' method = 'POST' id="center"> 
+            <br><br>
+            <label for="txtName">Topic</label>
+            <input type="text" id="topic" name="topic" placeholder="topic" required/><br>
+        <br>
+            <label for="txtTitle">Title</label>
+            <input type="text" id="title" name="title" placeholder="title" required/><br>
+        
+        <br>
+            <label for="txtdetail">Details</label>
+            <input type="text" id="details" name="details" placeholder="description" required minlength="10"/><br>
+        <br>
+            <label for="txtlocation">Where</label>
+            <input type="text" id="location"  name="location" placeholder="location" required/><br>
+        <br>
+            <label for="txtStart">Start Time</label>
+            <input type="text" id="startTime"  name="startTime" placeholder="00:00"required/><br>
+            <br>
+            
+            <label for="txtend">End Time</label>
+            <input type="text" id="endTime" name="endTime" placeholder="00:00" required/><br>
+        
+           <br>
+           <label for="date">Date</label>
+            <input type="text" id="date" name="date" placeholder="MM/DD/YYYY" required/><br>
+        
+           <br>
+            <label for="txtImgURL">Image URL</label>
+            <input type="text" id="imageURL" name="imageURL" placeholder="imageURl" required/><br>
+        <br>
+       
+            <button input type="submit">Create Connection</button>
+           
+        
+        </div>
+        
+        </form>
+          
+    
+        <%- include('../partials/footer.ejs')%>

@@ -1,0 +1,17 @@
+<%- include('../partials/header.ejs')%>
+
+   <div class="content">
+     <%if(connections.length) {%>
+       <p>Select a connection</p>
+      <%connections.forEach(connection=>{%>
+         <a href = "/connections/<%= connection._id%>"><p><%= connection.title%></p></a>
+       <%});
+     } else {%>
+      <p>There are no connections to display. </p>
+    <%}%>
+   </div>
+    
+
+
+
+<%- include('../partials/footer.ejs')%>

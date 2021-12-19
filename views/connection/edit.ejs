@@ -1,0 +1,46 @@
+<%- include('../partials/header.ejs')%>
+
+      <div >
+          <form method = "POST" action = "/connections/<%= connection._id%>?_method=PUT"> 
+            <br><br>
+            <label for="txtName">Topic</label>
+            <input type="text" id="topic" name="topic" value = "<%= connection.topic%>" required /><br>
+        <br>
+            <label for="txtTitle">Title</label>
+            <input type="text" id="title" name="title" value = "<%= connection.title%>" /><br>
+        <br>
+
+            <label for="txtHost">Host</label>
+            <input type="text" id="host"  name="host" value = "<%= connection.host%>"/><br>
+        <br>
+            <label for="txtDetail">Details</label>
+            <input type="text" id="details" name="details" value = "<%= connection.details%>" required minlength="10"/><br>
+        <br>
+            <label for="txtLocation">Where</label>
+            <input type="text" id="location"  name="location" value = "<%= connection.location%>"/><br>
+        <br>
+            <label for="txtStart">Start TIme</label>
+            <input type="text" id="startTime"  name="startTime" value = "<%= connection.startTime%>"/><br>
+        <br>
+
+            <label for="txtEnd">End TIme</label>
+            <input type="text" id="endTime"  name="endTime" value = "<%= connection.endTime%>"/><br>
+        <br>
+            
+            <label for="txtDate">Date</label>
+            <input type="text" id="date" name="date" value = "<%= connection.date%>"/><br>
+        
+           <br>
+            <label for="txtImgURL">Image URL</label>
+            <input type="text" id="imageURL" name="imageURL" value = "<%= connection.imageURL%>"/><br>
+        <br>
+       
+            <button input type="submit">Create Connection</button>
+           
+        
+        </div>
+        
+        </form>
+          
+    
+        <%- include('../partials/footer.ejs')%>
